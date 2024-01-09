@@ -11,11 +11,13 @@ public class Bicycle extends Vehicle implements VehicleInterface {
         System.out.println("Обслуживаем: " + this.getModelName());
     }
 
+    @Override
     public void updateTybe() {
         for (int i = 1; i <= this.getWheelsCount(); i++)
             System.out.println(i + " - Меняем покрышку");
     }
 
+    @Override
     public void checkEngine() {
     }
 

@@ -1,5 +1,6 @@
-public class Car extends Vehicle implements VehicleInterface{
-private double engineVolume;
+public class Car extends Vehicle implements VehicleInterface {
+    private double engineVolume;
+
     public Car(String modelName, int wheelsCount, double engineVolume) {
         super(modelName, wheelsCount);
         this.engineVolume = engineVolume;
@@ -9,8 +10,9 @@ private double engineVolume;
     public void infoService() {
         System.out.println("Обслуживаем: " + this.getModelName());
     }
+
     @Override
-    public void updateTybe(){
+    public void updateTybe() {
         for (int i = 1; i <= this.getWheelsCount(); i++)
             System.out.println(i + " - Меняем покрышку");
     }
