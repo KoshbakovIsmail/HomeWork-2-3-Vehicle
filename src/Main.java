@@ -1,32 +1,18 @@
+
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
-        Car car2 = new Car();
-        car.modelName = "car1";
-        car2.modelName = "car2";
-        car.wheelsCount = 4;
-        car2.wheelsCount = 4;
-
-        Truck truck = new Truck();
-        Truck truck2 = new Truck();
-        truck.modelName = "truck1";
-        truck2.modelName = "truck2";
-        truck.wheelsCount = 6;
-        truck2.wheelsCount = 8;
-
-        Bicycle bicycle = new Bicycle();
-        Bicycle bicycle2 = new Bicycle();
-        bicycle.modelName = "bicycle1";
-        bicycle2.modelName = "bicycle2";
-        bicycle.wheelsCount = 2;
-        bicycle2.wheelsCount = 2;
-
-        ServiceStation station = new ServiceStation();
-        station.check(car, null, null);
-        station.check(car2, null, null);
-        station.check(null, bicycle, null);
-        station.check(null, bicycle2, null);
-        station.check(null, null, truck);
-        station.check(null, null, truck2);
+        Bicycle bicycle = new Bicycle("Bicycle", 2, 1);
+        Bicycle bicycle1 = new Bicycle("Bicycle1", 2, 0);
+        Car car = new Car("Car", 4,2.2);
+        Car car1 = new Car("Car1", 4, 2.5);
+        Truck truck = new Truck("Truck", 6, 5.7,1);
+        Truck truck1 = new Truck("Truck1",6,4.7,0);
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.checVehicle(bicycle);
+        serviceStation.checVehicle(bicycle1);
+        serviceStation.checVehicle(car);
+        serviceStation.checVehicle(car1);
+        serviceStation.checVehicle(truck);
+        serviceStation.checVehicle(truck1);
     }
 }
