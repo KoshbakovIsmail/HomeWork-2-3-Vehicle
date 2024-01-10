@@ -10,18 +10,17 @@ public class Truck extends Vehicle implements VehicleInterface {
 
     @Override
     public void infoService() {
-        System.out.println("Обслуживаем: " + this.getModelName());
+        System.out.println("Обслуживаем грузовик: " + this.getModelName());
     }
 
     @Override
-    public void updateTybe() {
+    public void updateTyre() {
         if (this.additionalTrailer == this.additionalTrailer) {
             this.additionalTrailer += this.additionalTrailer;
         }
         int num = this.additionalTrailer + this.getWheelsCount();
         for (int i = 1; i <= num; i++)
             System.out.println(i + " - Меняем покрышку");
-
     }
 
     @Override
@@ -39,8 +38,6 @@ public class Truck extends Vehicle implements VehicleInterface {
         }
         System.out.println("Проверяем прицеп - Количество прицепа: " + this.additionalTrailer);
     }
-
-
 }
 
 

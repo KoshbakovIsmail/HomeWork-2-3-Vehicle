@@ -1,8 +1,7 @@
 public interface VehicleInterface {
+    abstract void infoService();
 
-    public void infoService();
-
-    public void updateTybe();
+    public void updateTyre();
 
     public void checkEngine();
 

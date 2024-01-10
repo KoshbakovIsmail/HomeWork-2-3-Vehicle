@@ -8,11 +8,11 @@ public class Car extends Vehicle implements VehicleInterface {
 
     @Override
     public void infoService() {
-        System.out.println("Обслуживаем: " + this.getModelName());
+        System.out.println("Обслуживаем автомобиль: " + this.getModelName());
     }
 
     @Override
-    public void updateTybe() {
+    public void updateTyre() {
         for (int i = 1; i <= this.getWheelsCount(); i++)
             System.out.println(i + " - Меняем покрышку");
     }
